@@ -1,7 +1,8 @@
 import { ButtonProps } from "./types";
-import { useState } from 'react'
+import { useState } from 'react';
+import { Button } from "@chakra-ui/react";
 
-const Button: React.FC<ButtonProps> = (
+const ButtonComp: React.FC<ButtonProps> = (
     {
         title,
         children,
@@ -19,20 +20,19 @@ const Button: React.FC<ButtonProps> = (
     }
 
     const normalBtn = {
-        padding: '5px 12px',
-        backgroundColor: isHovering? '#006089' : '#004266',
-        margin: '5px',
-        borderRadius: '5px',
-        border: 'none',
-        color: 'white',
-        transition: 'all .5s',
-    }
+      padding: "5px 12px",
+      backgroundColor: isHovering ? "#e3433a" : "#ff433a",
+      margin: "5px",
+      borderRadius: "15px",
+      border: "none",
+      transition: "all .5s",
+    };
 
     return(
         <>
-            <button onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={normalBtn}>{children}{title}</button>
+            <Button onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={normalBtn}>{children}{title}</Button>
         </>
     )
 }
 
-export default Button
+export default ButtonComp

@@ -1,17 +1,17 @@
 import { Box } from "@chakra-ui/react";
-import { Home } from './pages/Home';
+import { Footer } from "./components/Footer/Footer";
+import Nav from "./components/NavBar/Nav";
+import { RouterLinks } from "./utils/RouterLinks";
 
 function App() {
 
 
   return (
-    <>
-      <Box>
-        
-        <Home/>
-
-      </Box>
-    </>
+    <Box color='white'>
+      <Nav/>
+      <RouterLinks/>
+      <Footer/>
+    </Box>
   );
 }
 

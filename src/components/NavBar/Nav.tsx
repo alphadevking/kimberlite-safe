@@ -1,6 +1,7 @@
-import { Box, Img, Flex, Spacer } from '@chakra-ui/react';
+import { Box, Img, Flex, Spacer, HStack } from '@chakra-ui/react';
 import casiarLogo from '../../assets/kimberlite.png'
 import Button from '../Button/Button';
+import ButtonComp from '../Button/Button';
 
 
 const imagestyle = {
@@ -12,25 +13,27 @@ const navbarstyle = {
     background: 'transparent',
     // outline: '1px solid #D4DBE1',
     width: '100%',
-    boxShadow: '.5px .5px 1px #D4DBE1',
+    borderBottom: '2px solid #ffffff',
     backdropFilter: 'blur(10px)',
     transition: 'all .5s',
-    padding: '0px 5vw'
+    padding: '10px 5vw',
+    color: 'white',
 }
 
 const Nav = () => {
     return (
-      <Flex style={navbarstyle}>
-        <Box style={{paddingTop: '10px'}}>
-          <Flex>
-            <Img src={casiarLogo} style={imagestyle} />
+      <HStack style={navbarstyle}>
+        <Box style={{ paddingTop: "10px" }}>
+          <Flex style={imagestyle}>
+            <Img src={casiarLogo} />
             <>imberlite</>
           </Flex>
         </Box>
 
         <Spacer />
-        <Button title='Connect' />
-      </Flex>
+  
+      <ButtonComp title='Connect Wallet'/>
+      </HStack>
     );
 }
 
