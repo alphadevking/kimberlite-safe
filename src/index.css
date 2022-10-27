@@ -6,3 +6,8 @@
     box-sizing: border-box;
     font-family: noir pro;
 }
+
+td,
+th {
+    border-bottom: 1px solid #ff433a;
+}

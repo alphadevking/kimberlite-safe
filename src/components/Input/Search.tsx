@@ -1,12 +1,12 @@
-import { Box, HStack, Input } from '@chakra-ui/react'
-import { FaSearch } from 'react-icons/Fa'
-import { Link } from 'react-router-dom';
+import { Box, HStack, Input } from "@chakra-ui/react";
+import { FaSearch } from "react-icons/Fa";
+import { Link } from "react-router-dom";
 
 const inputStyles: any = {
   borderRadius: 15,
-  borderColor: onclick? "white" : "#ff433a",
-  width: '100',
-  marginEnd: '-40px'
+  borderColor: "#ff433a",
+  width: "100",
+  marginEnd: "-40px",
 };
 
 export const Search = () => {
@@ -14,10 +14,10 @@ export const Search = () => {
     <Box>
       <HStack>
         <Input {...inputStyles} />
-        <Link to='/'>
+        <Link to=''>
           <FaSearch color='#ff433a' />
         </Link>
       </HStack>
     </Box>
   );
-}
+};

@@ -1,25 +1,40 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Container, Text } from "@chakra-ui/react";
 import { Search } from "../components/Input/Search";
 import { Link, Outlet } from "react-router-dom";
+import { styles } from "./explore/lockAPI";
 
 export const Lockpage = () => {
+
   return (
     <Box ml={25}>
       <Box m={2} pt={9}>
         <Text pb={5} fontSize={"20px"}>
           Explore Locks
         </Text>
-        <Search/>
+        <Search />
       </Box>
-      <Box pt={5} className='tabs' color='white'>
-        <Link to='/explore/featured' className='tab tab-bordered tab-active'>
-          Featured
+      <Box pt={5} className='tabs'>
+        <Link
+          to='/explore/featured'
+          style={styles}
+          className='tab tab-bordered tab-active'
+        >
+          Featured Locks
         </Link>
         <Link to='/explore/new' className='tab tab-bordered'>
-          New
+          My Locks
         </Link>
       </Box>
-      <Outlet/>
+      <Box p={5}>
+        <Outlet />
+      </Box>
+      <Container>
+        Disclaimer: The information provided shall not in any way constitute a
+        recommendation as to whether you should invest in any product discussed.
+        We accept no liability for any loss occasioned to any person acting or
+        refraining from action as a result of any material provided or
+        published.
+      </Container>
     </Box>
   );
 };

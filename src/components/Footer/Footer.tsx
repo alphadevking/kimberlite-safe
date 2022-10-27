@@ -8,8 +8,8 @@ export const Footer = () => {
         <Circle bg='white'>
           <FaCopyright size='25px' color='#ff433a' />
         </Circle>
-        <Text>2022 Kimberlite Labs</Text>
+        <Text>2022 Kimberlite.rocks</Text>
       </HStack>
     </Container>
   );
-};
+}

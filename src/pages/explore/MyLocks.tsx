@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 import { lockData, styles } from "./lockAPI";
 
-export const Featured = () => {
+export const MyLocks = () => {
   return (
     <>
       <TableContainer>
