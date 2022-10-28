@@ -1,7 +1,7 @@
 import { Box, Container, Text } from "@chakra-ui/react";
-import { Search } from "../components/Input/Search";
+import { Search } from "../components/Search";
 import { Link, Outlet } from "react-router-dom";
-import { styles } from "./explore/lockAPI";
+import { styles } from '../global/view';
 
 export const Lockpage = () => {
 

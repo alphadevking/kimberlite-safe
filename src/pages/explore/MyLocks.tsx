@@ -10,7 +10,8 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
-import { lockData, styles } from "./lockAPI";
+import { lockData } from "./lockAPI";
+import { styles } from '../../global/view';
 
 export const MyLocks = () => {
   return (

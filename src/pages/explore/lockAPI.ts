@@ -4,6 +4,3 @@ export const lockData = [
   { id: "3", tokenAdd: "0x49c7453b0878ecE4c1D9dF10900C466039474A9f", amount: 3782.5 },
 ];
 
-export const styles = {
-  color: "#ff433a",
-};
