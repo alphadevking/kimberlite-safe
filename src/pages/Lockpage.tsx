@@ -2,6 +2,7 @@ import { Box, Container, Text } from "@chakra-ui/react";
 import { Search } from "../components/Search";
 import { Link, Outlet } from "react-router-dom";
 import { styles } from '../global/view';
+import ButtonComp from "../components/Button/Button";
 
 export const Lockpage = () => {
 
@@ -25,6 +26,10 @@ export const Lockpage = () => {
           My Locks
         </Link>
       </Box>
+      <Link to={"/create/new"}>
+        <ButtonComp title="Create New Lock"/>
+      </Link>
+
       <Box p={5}>
         <Outlet />
       </Box>
