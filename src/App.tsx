@@ -7,7 +7,7 @@ function App() {
 
 
   return (
-    <Box color='white'>
+    <Box>
       <Nav/>
       <RouterLinks/>
       <Footer/>

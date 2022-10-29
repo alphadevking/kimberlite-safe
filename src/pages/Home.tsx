@@ -21,10 +21,10 @@ export const Home = () => {
         <HStack pb={10} mt={5}>
 
           <Link to='explore/featured'>
-            <ButtonComp title='Explore Locks'></ButtonComp>
+            <ButtonComp title='Explore Locks' color="white"></ButtonComp>
           </Link>
           <Link to='explore/new'>
-            <ButtonComp title='New Locks'></ButtonComp>
+            <ButtonComp title='New Locks' color="white"></ButtonComp>
           </Link>
 
         </HStack>

@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
-import { lockData } from "./lockAPI";
+import { featuredLockData } from "./lockAPI";
 import { styles } from "../../global/view";
 
 export const Featured = () => {
@@ -28,7 +28,7 @@ export const Featured = () => {
             </Tr>
           </Thead>
           <Tbody>
-            {lockData.map((val, key) => {
+            {featuredLockData.map((val, key) => {
               return (
                 <Tr key={key}>
                   <Td>{val.id}</Td>

@@ -8,7 +8,7 @@ export const CustomInput: React.FC<kInputProps> = (
         placeholder,
         style,
         search,
-        required
+        required,
     }
 ) => {
   return (

@@ -1,5 +1,5 @@
 export const styles = {
-  color: "#ff433a",
+  // color: "#ff433a",
 };
 
 export const inputSearchStyle: any = {

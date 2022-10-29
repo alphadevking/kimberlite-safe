@@ -18,7 +18,7 @@ export const Lockpage = () => {
         <Link
           to='/explore/featured'
           style={styles}
-          className='tab tab-bordered tab-active'
+          className='tab tab-bordered'
         >
           Featured Locks
         </Link>
@@ -27,7 +27,7 @@ export const Lockpage = () => {
         </Link>
       </Box>
       <Link to={"/create/new"}>
-        <ButtonComp title="Create New Lock"/>
+        <ButtonComp title="Create New Lock" color="white"/>
       </Link>
 
       <Box p={5}>

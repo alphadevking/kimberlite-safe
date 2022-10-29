@@ -11,3 +11,7 @@ td,
 th {
     border-bottom: 1px solid #ff433a;
 }
+
+a.tab:active{
+    color: #ff433a;
+}

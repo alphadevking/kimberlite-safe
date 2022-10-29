@@ -6,6 +6,7 @@ const ButtonComp: React.FC<ButtonProps> = (
     {
         title,
         children,
+        color,
     }
 ) => {
     
@@ -26,6 +27,7 @@ const ButtonComp: React.FC<ButtonProps> = (
       borderRadius: "15px",
       border: "none",
       transition: "all .5s",
+      color: `${color}`,
     };
 
     return(
