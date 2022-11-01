@@ -10,7 +10,7 @@ export const Home = () => {
           Bringing
         </Text>
 
-        <Heading fontSize={"150"} marginTop={-8} marginBottom={-5}>
+        <Heading fontSize={"125"} marginTop={-8} marginBottom={-5}>
           DeFi
         </Heading>
 
