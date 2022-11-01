@@ -4,14 +4,20 @@ import Nav from "./components/NavBar/Nav";
 import { RouterLinks } from "./utils/RouterLinks";
 
 function App() {
-
+  
 
   return (
+
     <Box>
+
       <Nav/>
+
       <RouterLinks/>
+      
       <Footer/>
+
     </Box>
+
   );
 }
 

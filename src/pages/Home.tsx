@@ -6,15 +6,15 @@ export const Home = () => {
   return (
     <>
       <Box m={50}>
-        <Text fontSize={25} ml={2}>
+        <Text fontSize={"40"} ml={2}>
           Bringing
         </Text>
 
-        <Heading fontSize={100} marginTop={-8} marginBottom={-5}>
+        <Heading fontSize={"150"} marginTop={-8} marginBottom={-5}>
           DeFi
         </Heading>
 
-        <Text fontSize={25} ml={2}>
+        <Text fontSize={"40"} ml={2}>
           Infrastructure to DogeChain
         </Text>
 

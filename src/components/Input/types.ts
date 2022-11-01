@@ -4,4 +4,5 @@ export interface kInputProps{
     style?: any,
     search?: boolean,
     required?: boolean,
+    ref?: undefined,
 }

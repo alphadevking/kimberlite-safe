@@ -5,19 +5,30 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react'
 
+// Coinbase Web3ReactProvider
+import { Web3ReactProvider } from "@web3-react/core";
+import { Web3Provider } from "@ethersproject/providers";
+
+const getLibrary = (provider:any) => {
+  return new Web3Provider(provider);
+}
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    
-    <BrowserRouter>
 
-      <ChakraProvider>
+    <Web3ReactProvider getLibrary={getLibrary}>
 
-        <App />
+      <BrowserRouter>
 
-      </ChakraProvider>
+        <ChakraProvider>
 
-    </BrowserRouter>
+          <App />
+
+        </ChakraProvider>
+
+      </BrowserRouter>
+
+    </Web3ReactProvider>
 
   </React.StrictMode>
 );
