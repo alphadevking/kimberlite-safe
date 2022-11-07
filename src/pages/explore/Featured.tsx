@@ -5,7 +5,6 @@ import {
   Tr,
   Th,
   Td,
-  // TableCaption,
   TableContainer,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
@@ -18,7 +17,7 @@ export const Featured = () => {
     <>
       <TableContainer>
         <Table variant='unstyled'>
-          {/* <TableCaption>Present Locks</TableCaption> */}
+
           <Thead>
             <Tr>
               <Th></Th>
@@ -27,6 +26,7 @@ export const Featured = () => {
               <Th></Th>
             </Tr>
           </Thead>
+
           <Tbody>
             {featuredLockData.map((val, key) => {
               return (
@@ -34,11 +34,12 @@ export const Featured = () => {
                   <Td>{val.id}</Td>
                   <Td>{val.tokenAdd}</Td>
                   <Td>{val.amount}</Td>
-                  <Td><Link to={''} style={styles}>View</Link></Td>
+                  <Td><Link to={'/info'} style={styles}>View</Link></Td>
                 </Tr>
               );
             })}
           </Tbody>
+
         </Table>
       </TableContainer>
     </>

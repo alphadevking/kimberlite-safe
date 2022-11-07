@@ -5,14 +5,14 @@ import { inputTextStyle } from "../global/view";
 
 export const CreateLock = () => {
   return (
-    <Box ml={25}>
+    <Box ml={25} mr={25}>
       <Box m={2} pt={9}>
         <Text pb={5} fontSize={"20px"}>
           Create New Lock
         </Text>
       </Box>
 
-      <Box p={5}>
+      <Box>
         <Box m={3}>
           <Text fontSize={"15px"}>Token or LP Token Address*</Text>
           <CustomInput

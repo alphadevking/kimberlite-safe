@@ -1,13 +1,12 @@
 import { Box, Container, Text } from "@chakra-ui/react";
 import { Search } from "../components/Search";
 import { Link, Outlet } from "react-router-dom";
-import { styles } from '../global/view';
+import { styles } from "../global/view";
 import ButtonComp from "../components/Button/Button";
 
 export const Lockpage = () => {
-
   return (
-    <Box ml={25}>
+    <Box ml={25} mr={25}>
       <Box m={2} pt={9}>
         <Text pb={5} fontSize={"20px"}>
           Explore Locks
@@ -27,13 +26,14 @@ export const Lockpage = () => {
         </Link>
       </Box>
       <Link to={"/create/new"}>
-        <ButtonComp title="Create New Lock" color="white"/>
+        <ButtonComp title='Create New Lock' color='white' />
       </Link>
 
       <Box p={5}>
         <Outlet />
       </Box>
-      <Container>
+
+      <Container p={5} textAlign={"center"}>
         Disclaimer: The information provided shall not in any way constitute a
         recommendation as to whether you should invest in any product discussed.
         We accept no liability for any loss occasioned to any person acting or

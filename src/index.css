@@ -12,6 +12,6 @@ th {
     border-bottom: 1px solid #ff433a;
 }
 
-a.tab:active{
+a.tab:focus:active{
     color: #ff433a;
 }

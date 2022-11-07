@@ -34,7 +34,7 @@ export const MyLocks = () => {
                   <Td>{val.id}</Td>
                   <Td>{val.tokenAdd}</Td>
                   <Td>{val.amount}</Td>
-                  <Td><Link to={''} style={styles}>View</Link></Td>
+                  <Td><Link to={'/info'} style={styles}>View</Link></Td>
                 </Tr>
               );
             })}

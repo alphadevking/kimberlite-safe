@@ -1,18 +1,8 @@
 import { ButtonProps } from "./types";
 import { useState } from "react";
 import { Button } from "@chakra-ui/react";
-// import { useWeb3React } from "@web3-react/core";
-// import { InjectedConnector } from '@web3-react/injected-connector';
 
 const WalletButton: React.FC<ButtonProps> = ({ title, children, color }) => {
-
-    // const Injected = new InjectedConnector({
-    // supportedChainIds: [1, 3, 4, 5, 42],
-    // });
-
-    // const { activate, deactivate } = useWeb3React();
-
-    // const callWallet = () => { activate(Injected) }
 
     const [isHovering, setIsHovering] = useState(false);
 
@@ -37,7 +27,6 @@ const WalletButton: React.FC<ButtonProps> = ({ title, children, color }) => {
     return (
         <>
         <Button
-            // onClick={callWallet}
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
             style={normalBtn}

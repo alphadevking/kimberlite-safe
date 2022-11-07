@@ -1,11 +1,12 @@
 import { Box, Img, Flex, Spacer, HStack } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 import casiarLogo from '../../assets/kimberlite.png'
 import { ColorModeSwitcher } from '../../utils/ColorModeSwitcher';
 import WalletButton from '../Button/ConnectWalletButton';
 
 const imagestyle = {
-    width: '1.4rem',
-    paddingBottom: '4px',
+    width: '1.3em',
+    height: '1.3em',
 }
 
 const navbarstyle = {
@@ -26,21 +27,20 @@ const Nav = () => {
 
         <Box pt='10px'>
 
-          <Flex style={imagestyle}>
-            <Img src={casiarLogo} />
-            <>imberlite</>
-          </Flex>
+          <Link to={"/"}>
+            <Flex style={imagestyle}>
+              <Img src={casiarLogo} />{'imberlite'}
+            </Flex>
+          </Link>
 
         </Box>
 
         <Spacer />
 
-        {/* <ButtonComp onClick={() => {activate(WalletConnect)}} title='Connect Wallet' color='white'
-        /> */}
-        <WalletButton title='Connect' color="white"/>
+        <WalletButton title='Connect' color='white' />
 
         <ColorModeSwitcher />
-
+        
       </HStack>
     );
 }

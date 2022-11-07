@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { CreateLock } from '../pages/CreateLock';
 import { Featured } from '../pages/explore/Featured';
+import { LockDetail } from '../pages/explore/LockDetails';
 import { MyLocks } from '../pages/explore/MyLocks';
 import { Home } from '../pages/Home'
 import { Lockpage } from '../pages/Lockpage';
@@ -13,6 +14,8 @@ export const RouterLinks = () => {
 
       <Route path={'*'} element={<NotFound />} />
 
+      <Route path={'info'} element={<LockDetail />} />
+      
       <Route path={'/explore'} element={<Lockpage />}>
         <Route path={'featured'} element={<Featured/>} />
         <Route path={'new'} element={<MyLocks/>} />
